@@ -6,3 +6,8 @@ if(place_meeting(x + hspeed, y, obj_Wall))
 //Vertical bounce
 if(place_meeting(x, y + vspeed, obj_Wall))
     direction = -direction;
+	
+//Hit enemy and stop
+if(place_meeting(x, y + vspeed, obj_Enemy) || place_meeting(x + hspeed, y, obj_Enemy)){
+	motion_set(direction, 0);
+}
