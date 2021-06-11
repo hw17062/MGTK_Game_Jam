@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if other.visible{
-	move_bounce_all(true);
-}
+collided_x = other.x;
+collided_y = other.y;
+angle = 
+motion_set(180, moveSpeed);
