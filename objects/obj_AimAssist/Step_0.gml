@@ -1,0 +1,7 @@
+/// @description move start to the player
+// You can write your code in this editor
+
+x = obj_Player.x;
+y = obj_Player.y;
+
+m_x = mousex

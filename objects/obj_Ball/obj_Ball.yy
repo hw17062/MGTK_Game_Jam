@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite4",
-    "path": "sprites/Sprite4/Sprite4.yy",
+    "name": "spr_Ball",
+    "path": "sprites/spr_Ball/spr_Ball.yy",
   },
   "solid": false,
   "visible": true,
