@@ -1,16 +1,13 @@
 {
   "spriteId": {
-    "name": "spr_Enemy_FrontDef",
-    "path": "sprites/spr_Enemy_FrontDef/spr_Enemy_FrontDef.yy",
+    "name": "spr_Enemy",
+    "path": "sprites/spr_Enemy/spr_Enemy.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_Enemy_Parent",
-    "path": "objects/obj_Enemy_Parent/obj_Enemy_Parent.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -23,10 +20,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_Ball","path":"objects/obj_Ball/obj_Ball.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -34,7 +28,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_Enemy_FrontDef",
+  "name": "obj_Enemy_Parent",
   "tags": [],
   "resourceType": "GMObject",
 }
