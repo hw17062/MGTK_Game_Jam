@@ -1,7 +1,44 @@
 /// @description Insert description here
 // You can write your code in this editor
-vx = (right - left) * walkSpeed
-vy = (down - up) * walkSpeed
+
+if right == 1 or d == 1
+{
+	move_right = 1
+}
+else
+{
+	move_right = 0
+}
+
+if left == 1 or a == 1
+{
+	move_left = 1
+}
+else
+{
+	move_left = 0
+}
+
+if up == 1 or w == 1
+{
+	move_up = 1
+}
+else
+{
+	move_up = 0
+}
+
+if down == 1 or s == 1
+{
+	move_down = 1
+}
+else
+{
+	move_down = 0
+}
+
+vx = (move_right - move_left) * walkSpeed
+vy = (move_down - move_up) * walkSpeed
 
 if vx != 0 and vy != 0
 {
