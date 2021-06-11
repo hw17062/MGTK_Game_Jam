@@ -5,7 +5,11 @@ right = 0
 up = 0
 down = 0
 
+dir = 0
+
 vx = 0
 vy = 0
+
+last_vx = 0
 
 walkSpeed = 5
