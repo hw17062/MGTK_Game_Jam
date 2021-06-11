@@ -11,3 +11,12 @@ if vx != 0 and vy != 0
 
 x += vx
 y += vy
+
+if mouse_check_button_pressed(mb_left)
+   {
+	spawn_dir = point_direction(x,y,mouse_x,mouse_y)
+
+	spawn_x = x + lengthdir_x(50,spawn_dir)
+	spawn_y = y + lengthdir_y(50,spawn_dir)
+   instance_create_layer(spawn_x, spawn_y, "Instances", obj_Ball);
+   }

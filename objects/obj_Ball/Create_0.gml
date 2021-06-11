@@ -1,4 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-motion_set(20, 7);
+spawn_dir = point_direction(x,y,mouse_x,mouse_y)
+
+motion_set(spawn_dir, 5);
