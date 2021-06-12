@@ -3,6 +3,7 @@
 switch(room){
 	case rm_main_menu:
 	audio_stop_all()
+	draw_set_alpha(1)
 	room_goto_next()
 
 		break;
