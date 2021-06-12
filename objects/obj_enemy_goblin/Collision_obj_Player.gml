@@ -3,4 +3,5 @@
 if holding_ball{
 	holding_ball = false;
 	instance_destroy(obj_Ball);	
+	mv_speed = 5
 }
