@@ -4,12 +4,11 @@ global.recall_cooldown = false;
 paused = false;
 paused_sprite = noone;
 
-view_enabled = true;
-
+/*
 var _dwidth = display_get_width();
 var _dheight = display_get_height();
 var _xpos = (_dwidth / 2) - 480;
 var _ypos = (_dheight / 2) - 270;
 window_set_rectangle(10, 10, _dwidth, _dheight);
-
+*/
 global.broken = false;
