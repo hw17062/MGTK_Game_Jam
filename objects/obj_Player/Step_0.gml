@@ -47,9 +47,10 @@ if vx != 0 and vy != 0
 }
 
 
-if place_meeting(x+vx,y,other)
+if place_meeting(x+vx,y,all)
 {
-    while !(place_meeting(x+sign(vx),y,other))
+	show_debug_message("coll detected")
+    while !(place_meeting(x+sign(vx),y,all))
     {
         x += sign(vx);
     }
@@ -60,9 +61,9 @@ else
 	x += vx;
 }
 
-if place_meeting(x,y+vy,other)
+if place_meeting(x,y+vy,all)
 {
-    while !(place_meeting(x,y+sign(vy),other))
+    while !(place_meeting(x,y+sign(vy),all))
     {
         y += sign(vy);
     }

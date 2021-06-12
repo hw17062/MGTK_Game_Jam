@@ -18,10 +18,10 @@ end_x =  start_x + lengthdir_x(length, aim_dir);
 end_y =  start_y + lengthdir_y(length, aim_dir);
 
 //Draw a line between the player at the end of the aiming, no collision yet
-draw_line_width_colour(start_x,start_y, end_x, end_y, 1, c_white, c_white);
+//draw_line_width_colour(start_x,start_y, end_x, end_y, 1, c_white, c_white);
 
 
-/*
+
 //while length > 0{
 hit_obj = collision_line(start_x, start_y, end_x, end_y, all, true, false);
 
@@ -36,4 +36,4 @@ else{
 	draw_line_width_colour(start_x,start_y, end_x, end_y, 2, $FFFFFF, $FFFFFF);
 }
 //}
-*/
+
