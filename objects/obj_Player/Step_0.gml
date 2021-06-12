@@ -47,36 +47,36 @@ if vx != 0 and vy != 0
 }
 
 
-if place_meeting(x+vx,y,all)
-{
-	show_debug_message("coll detected")
-    while !(place_meeting(x+sign(vx),y,all))
-    {
-        x += sign(vx);
-    }
-    vx = 0;
-}
-else
-{
-	x += vx;
-}
+//if place_meeting(x+vx,y,all)
+//{
+//	show_debug_message("coll detected")
+//    while !(place_meeting(x+sign(vx),y,all))
+//    {
+//        x += sign(vx);
+//    }
+//    vx = 0;
+//}
+//else
+//{
+//	x += vx;
+//}
 
-if place_meeting(x,y+vy,all)
-{
-    while !(place_meeting(x,y+sign(vy),all))
-    {
-        y += sign(vy);
-    }
-    vy = 0;
-}
-else
-{
-	y +=vy;
-}
+//if place_meeting(x,y+vy,all)
+//{
+//    while !(place_meeting(x,y+sign(vy),all))
+//    {
+//        y += sign(vy);
+//    }
+//    vy = 0;
+//}
+//else
+//{
+//	y +=vy;
+//}
 
 
-//x += vx
-//y += vy
+x += vx
+y += vy
 
 if mouse_check_button_pressed(mb_left) and !instance_exists(obj_Ball)
    {
@@ -134,4 +134,11 @@ else
 			}
 		}
 	}
+}
+
+
+//If overlapping with wall, stop moving
+if (collision_circle(x, y, 15, obj_Wall_Parent, true, true) != noone){
+	alarm_set(0,-1);
+	motion_set(dir, 0);
 }
