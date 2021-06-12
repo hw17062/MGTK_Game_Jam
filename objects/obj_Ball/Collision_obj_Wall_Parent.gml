@@ -3,4 +3,4 @@
 
 if other.visible && other.bouncy{
 	move_bounce_all(true);
-}
+} 
