@@ -6,4 +6,5 @@ if other.speed > 0 && !holding_ball{
 }else {
 	holding_ball = true;
 	other.stolen = self
+	mv_speed = 2;
 }

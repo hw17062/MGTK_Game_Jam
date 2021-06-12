@@ -43,7 +43,7 @@ function find_wall_to_hide(){
 			} else {
 				mp_grid_path(global.grid, path, x, y, point_to_check_x, point_to_check_y, true);
 
-				path_start(path,5, path_action_stop, true);
+				path_start(path,mv_speed, path_action_stop, true);
 			}
 		}
 		
@@ -58,7 +58,7 @@ if instance_exists(obj_Ball) {
 	if obj_Ball.speed == 0 && !holding_ball{
 	
 		mp_grid_path(global.grid, path, x, y, obj_Ball.x, obj_Ball.y, true);
-		path_start(path, 5, path_action_stop, true);
+		path_start(path, mv_speed , path_action_stop, true);
 	} 
 	else if obj_Ball.speed > 0 || holding_ball {
 		find_wall_to_hide()
