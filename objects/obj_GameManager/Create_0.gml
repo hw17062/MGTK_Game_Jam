@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+
 paused = false;
-paused_player = false;
-paused_sprite = -1;
+paused_sprite = noone;
 
 
 global.broken = false;
