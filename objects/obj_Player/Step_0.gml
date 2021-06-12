@@ -46,8 +46,8 @@ if vx != 0 and vy != 0
 	vy = vy/sqrt(2)
 }
 
-
-if place_meeting(x+vx,y,all)
+/*
+if place_meeting(x+vx,y,other)
 {
 	show_debug_message("coll detected")
     while !(place_meeting(x+sign(vx),y,all))
@@ -73,10 +73,10 @@ else
 {
 	y +=vy;
 }
+*/
 
-
-//x += vx
-//y += vy
+x += vx
+y += vy
 
 if mouse_check_button_pressed(mb_left) and !instance_exists(obj_Ball)
    {

@@ -3,7 +3,7 @@
     "name": "spr_Wall_Bouncy",
     "path": "sprites/spr_Wall_Bouncy/spr_Wall_Bouncy.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -26,7 +26,7 @@
   "eventList": [],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"bouncy","path":"objects/obj_Wall_Parent/obj_Wall_Parent.yy",},"objectId":{"name":"obj_Wall_Parent","path":"objects/obj_Wall_Parent/obj_Wall_Parent.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"","path":"",},"objectId":{"name":"obj_Wall_Parent","path":"objects/obj_Wall_Parent/obj_Wall_Parent.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Objects",
