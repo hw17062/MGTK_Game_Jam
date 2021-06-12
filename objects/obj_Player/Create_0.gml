@@ -16,6 +16,7 @@ move_up = 0
 move_down = 0
 
 dir = 0
+bumpdir = 0
 
 vx = 0
 vy = 0
