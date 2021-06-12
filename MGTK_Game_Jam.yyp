@@ -15,6 +15,7 @@
     {"id":{"name":"obj_arena","path":"objects/obj_arena/obj_arena.yy",},"order":10,},
     {"id":{"name":"spr_Enemy_FrontDef","path":"sprites/spr_Enemy_FrontDef/spr_Enemy_FrontDef.yy",},"order":4,},
     {"id":{"name":"obj_Wall_Bounce","path":"objects/obj_Wall_Bounce/obj_Wall_Bounce.yy",},"order":8,},
+    {"id":{"name":"obj_CameraController","path":"objects/obj_CameraController/obj_CameraController.yy",},"order":11,},
     {"id":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},"order":2,},
     {"id":{"name":"wav_gameplay_loop","path":"sounds/wav_gameplay_loop/wav_gameplay_loop.yy",},"order":1,},
     {"id":{"name":"obj_GameManager","path":"objects/obj_GameManager/obj_GameManager.yy",},"order":9,},
