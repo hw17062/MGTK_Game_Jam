@@ -1,11 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if !global.recall_cooldown && !global.broken{
+if !global.recall_cooldown && !global.broken && instance_exists(obj_Ball){
 	global.recall_cooldown = true;
 	alarm_set(1, 60 * 5)
 	with (obj_Ball){
 		recalling = true;
+		speed = 5;
 		loc_to_move_x = obj_Player.x;
 		loc_to_move_y= obj_Player.y;
 
