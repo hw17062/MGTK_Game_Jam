@@ -17,11 +17,16 @@ else
 {
 	draw_rectangle_colour(0, 0, room_width, room_height, c_white, c_white, c_white, c_white, false)
 	draw_set_alpha(fade)
-	fade -= 0.05
+	if fade > 0
+	{
+		fade -= 0.05
+		alarm_set(1,225)
+	}
 }
 
+
 gpu_set_blendmode(bm_subtract)
-draw_circle(obj_spotlight_sin.x,obj_spotlight_sin.y, 80, false)
+draw_circle(obj_spotlight_sin.x,obj_spotlight_sin.y, 100, false)
 draw_circle(obj_spotlight_neg.x,obj_spotlight_neg.y, 80, false)
 
 gpu_set_blendmode(bm_normal)
