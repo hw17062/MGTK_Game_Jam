@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},"order":3,},
+    {"id":{"name":"spr_pick_up","path":"sprites/spr_pick_up/spr_pick_up.yy",},"order":11,},
     {"id":{"name":"obj_Wall_Nonbounce","path":"objects/obj_Wall_Nonbounce/obj_Wall_Nonbounce.yy",},"order":7,},
     {"id":{"name":"obj_Enemy_Parent","path":"objects/obj_Enemy_Parent/obj_Enemy_Parent.yy",},"order":1,},
     {"id":{"name":"spr_player_down","path":"sprites/spr_player_down/spr_player_down.yy",},"order":3,},
@@ -9,6 +10,7 @@
     {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},"order":1,},
     {"id":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},"order":0,},
     {"id":{"name":"spr_Wall","path":"sprites/spr_Wall/spr_Wall.yy",},"order":6,},
+    {"id":{"name":"obj_pick_up_anim","path":"objects/obj_pick_up_anim/obj_pick_up_anim.yy",},"order":11,},
     {"id":{"name":"obj_Enemy_FrontDef","path":"objects/obj_Enemy_FrontDef/obj_Enemy_FrontDef.yy",},"order":6,},
     {"id":{"name":"obj_arena","path":"objects/obj_arena/obj_arena.yy",},"order":10,},
     {"id":{"name":"spr_Enemy_FrontDef","path":"sprites/spr_Enemy_FrontDef/spr_Enemy_FrontDef.yy",},"order":4,},
@@ -52,8 +54,8 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
     {"roomId":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
-    {"roomId":{"name":"rm_arena","path":"rooms/rm_arena/rm_arena.yy",},},
     {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
+    {"roomId":{"name":"rm_arena","path":"rooms/rm_arena/rm_arena.yy",},},
     {"roomId":{"name":"rm_GameOver","path":"rooms/rm_GameOver/rm_GameOver.yy",},},
   ],
   "Folders": [

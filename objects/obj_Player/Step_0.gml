@@ -56,6 +56,9 @@ if mouse_check_button_pressed(mb_left) and !instance_exists(obj_Ball)
 	spawn_x = x + lengthdir_x(50,spawn_dir)
 	spawn_y = y + lengthdir_y(50,spawn_dir)
    instance_create_layer(spawn_x, spawn_y, "Instances", obj_Ball);
+   if instance_exists(obj_pick_up_anim){
+	   instance_destroy(obj_pick_up_anim)
+   }
    }
 
 if vx > 0
