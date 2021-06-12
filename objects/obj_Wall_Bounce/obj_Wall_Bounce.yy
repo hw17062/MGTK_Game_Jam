@@ -3,7 +3,7 @@
     "name": "spr_Wall_Bouncy",
     "path": "sprites/spr_Wall_Bouncy/spr_Wall_Bouncy.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
