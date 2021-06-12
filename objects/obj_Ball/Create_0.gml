@@ -5,6 +5,7 @@ recalling = false
 spawn_dir = point_direction(x,y,mouse_x,mouse_y)
 
 motion_set(spawn_dir, 5);
+stolen = noone; //holds if the ball is stolen, is it is, then this holds who has it
 
 //init dist to play = 0
 dist = 0;

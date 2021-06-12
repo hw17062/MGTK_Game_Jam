@@ -4,14 +4,14 @@
 switch(room){
 	case rm_init:
 	
-	break;
+		break;
 	
 	case rm_main_menu:
-	draw_set_halign(fa_center)
-	draw_text(room_width/2, 2*room_height/3,
-	"Press Enter to start!!!");
-	draw_set_halign(fa_left)
-	break;
+		draw_set_halign(fa_center)
+		draw_text(room_width/2, 2*room_height/3,
+		"Press Enter to start!!!");
+		draw_set_halign(fa_left)
+		break;
 }
 
 if paused
@@ -27,3 +27,9 @@ if paused
     draw_text_transformed_colour(_cx + 5, _cy , "PAUSED", 2, 2, 0, c_aqua, c_aqua, c_aqua, c_aqua, 1);
 } else{
 }
+
+/*
+draw_set_alpha(0.2)
+mp_grid_draw(global.grid)
+draw_set_alpha(1)
+*/

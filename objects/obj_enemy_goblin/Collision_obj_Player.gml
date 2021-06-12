@@ -1,8 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-if other.bouncy{
-	move_bounce_all(true);
-} else {
-	speed = 0
+if holding_ball{
+	holding_ball = false;
+	instance_destroy(obj_Ball);	
 }
