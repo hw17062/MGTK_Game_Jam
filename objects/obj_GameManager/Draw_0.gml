@@ -8,7 +8,7 @@ switch(room){
 	
 	case rm_main_menu:
 	draw_set_halign(fa_center)
-	draw_text(room_width/2, room_height/2,
+	draw_text(room_width/2, 2*room_height/3,
 	"Press Enter to start!!!");
 	draw_set_halign(fa_left)
 	break;
