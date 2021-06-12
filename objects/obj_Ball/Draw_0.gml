@@ -20,3 +20,7 @@ else{
 	broken = true
 	draw_line_width_colour(x,y,player_pos_x,player_pos_y,1,c_red,c_red);
 }
+
+if recalling{
+	draw_circle_colour(loc_to_move_x, loc_to_move_y, 32, c_purple, c_purple, true);
+}
