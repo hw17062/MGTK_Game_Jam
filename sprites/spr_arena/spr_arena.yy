@@ -5,21 +5,17 @@
   "origin": 0,
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
-<<<<<<< Updated upstream
   "collisionTolerance": 98,
-=======
-  "collisionTolerance": 67,
->>>>>>> Stashed changes
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 915,
+  "bbox_right": 767,
   "bbox_top": 0,
-  "bbox_bottom": 915,
+  "bbox_bottom": 767,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 916,
-  "height": 916,
+  "width": 768,
+  "height": 768,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
