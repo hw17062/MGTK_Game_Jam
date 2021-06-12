@@ -5,4 +5,4 @@ dir_x = obj_Player.x
 dir_y = obj_Player.y
 
 dir_theta = point_direction(x, y, dir_x, dir_y)
-motion_set(dir_theta, 7)
+motion_set(dir_theta, 15)
