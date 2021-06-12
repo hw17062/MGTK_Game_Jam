@@ -3,7 +3,7 @@
 switch(room){
 	case rm_main_menu:
 	audio_stop_all()
-	room_goto(rm_init)
+	room_goto_next()
 
 		break;
 	case rm_GameOver:
