@@ -7,6 +7,13 @@ if recalling{
 		y < loc_to_move_y + 5 && y > loc_to_move_y - 5){
 	recalling = false
 	}
+	if sound == 0
+	{
+		audio_stop_sound(wav_pillar_drag)
+		audio_play_sound(wav_pillar_drag, 1, true)
+		audio_sound_pitch(wav_pillar_drag, 1.2)
+		sound = 1
+	}
 }
 
 //if the weapon is stolen, follow the enemy that has it
@@ -14,6 +21,11 @@ if stolen != noone {
 	move_towards_point(  stolen.x, stolen.y,6 );
 }
 
+if speed <= 0
+{
+	audio_stop_sound(wav_pillar_drag)
+	sound = 0
+}
 
 //If the weapon get's to far away, break the connection
 player_pos_x = obj_Player.x

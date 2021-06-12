@@ -19,3 +19,5 @@ else
 timer = irandom_range(30, 180)
 
 alarm_set(4, timer)
+
+sound = 0
