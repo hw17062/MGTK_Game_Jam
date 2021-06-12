@@ -13,6 +13,7 @@
     {"id":{"name":"spr_Enemy_FrontDef","path":"sprites/spr_Enemy_FrontDef/spr_Enemy_FrontDef.yy",},"order":4,},
     {"id":{"name":"obj_Wall_Bounce","path":"objects/obj_Wall_Bounce/obj_Wall_Bounce.yy",},"order":8,},
     {"id":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},"order":2,},
+    {"id":{"name":"obj_GameManager","path":"objects/obj_GameManager/obj_GameManager.yy",},"order":9,},
     {"id":{"name":"spr_Enemy","path":"sprites/spr_Enemy/spr_Enemy.yy",},"order":1,},
     {"id":{"name":"obj_Ball","path":"objects/obj_Ball/obj_Ball.yy",},"order":2,},
     {"id":{"name":"obj_BasicEnemy","path":"objects/obj_BasicEnemy/obj_BasicEnemy.yy",},"order":5,},
