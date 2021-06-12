@@ -16,6 +16,9 @@ player_pos_y = obj_Player.y
 
 dist = point_distance(x, y, player_pos_x, player_pos_y);
 
-if dist > max_dist{
+if dist > max_dist && !global.broken{
 	global.broken = true;
+	with (obj_GameManager){
+		alarm_set(0, 60*5);
+	}
 }
