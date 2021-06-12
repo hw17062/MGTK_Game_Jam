@@ -15,6 +15,7 @@
     {"id":{"name":"obj_enemy_goblin","path":"objects/obj_enemy_goblin/obj_enemy_goblin.yy",},"order":12,},
     {"id":{"name":"spr_Wall","path":"sprites/spr_Wall/spr_Wall.yy",},"order":6,},
     {"id":{"name":"wav_scream1","path":"sounds/wav_scream1/wav_scream1.yy",},"order":2,},
+    {"id":{"name":"wav_beam","path":"sounds/wav_beam/wav_beam.yy",},"order":15,},
     {"id":{"name":"obj_pick_up_anim","path":"objects/obj_pick_up_anim/obj_pick_up_anim.yy",},"order":11,},
     {"id":{"name":"wav_spring","path":"sounds/wav_spring/wav_spring.yy",},"order":9,},
     {"id":{"name":"obj_Enemy_FrontDef","path":"objects/obj_Enemy_FrontDef/obj_Enemy_FrontDef.yy",},"order":6,},
