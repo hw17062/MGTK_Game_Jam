@@ -46,8 +46,36 @@ if vx != 0 and vy != 0
 	vy = vy/sqrt(2)
 }
 
-x += vx
-y += vy
+
+if place_meeting(x+vx,y,other)
+{
+    while !(place_meeting(x+sign(vx),y,other))
+    {
+        x += sign(vx);
+    }
+    vx = 0;
+}
+else
+{
+	x += vx;
+}
+
+if place_meeting(x,y+vy,other)
+{
+    while !(place_meeting(x,y+sign(vy),other))
+    {
+        y += sign(vy);
+    }
+    vy = 0;
+}
+else
+{
+	y +=vy;
+}
+
+
+//x += vx
+//y += vy
 
 if mouse_check_button_pressed(mb_left) and !instance_exists(obj_Ball)
    {
