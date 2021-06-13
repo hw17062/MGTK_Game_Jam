@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-instance_destroy(self);
-obj_EnemyManager.bumpercurrent--;
+bumpermax = 10;
+bumpercurrent = 0;
+
+alarm_set(0, irandom_range(60,120));
