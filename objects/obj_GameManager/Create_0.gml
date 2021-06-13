@@ -16,6 +16,8 @@ chain_break = 0  //variable indicating momentat which chain is broken, not the s
 
 combo = 0;
 
+cheer_sound = 0
+
 line = 1
 next = 1
 no_replay = 0
