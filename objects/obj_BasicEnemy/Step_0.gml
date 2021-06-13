@@ -17,8 +17,26 @@ if speed == 0
 		image_xscale = -1
 	}
 }
-else if attacking == 0 
+else if attacking == 0
+{
 	if direction < 45 and direction > -45
 	{
-	
+		sprite_index = spr_bumper_walk_right
+		image_xscale = 1
 	}
+	else if direction < 135 and direction > 45
+	{
+		sprite_index = spr_bumper_walk_up
+		image_xscale = 1
+	}
+	else if direction < -45 and direction > -135
+	{
+		sprite_index = spr_bumper_walk_down
+		image_xscale = 1
+	}
+	else
+	{
+		sprite_index = spr_bumper_walk_right
+		image_xscale = -1
+	}
+}
