@@ -41,6 +41,7 @@ y += moveY
 
 if mouse_check_button_pressed(mb_left) and !instance_exists(obj_Ball)
    {
+	obj_GameManager.tit_throws++;
 	spawn_dir = point_direction(x,y,mouse_x,mouse_y)
 
 	spawn_x = x + lengthdir_x(50,spawn_dir)

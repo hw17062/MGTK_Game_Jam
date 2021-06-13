@@ -13,37 +13,18 @@ if combo_timer > 0{
 	
 	draw_set_font(fnt_ComboFont);
 	draw_set_colour(c_red);
-	draw_text(10, 10, roman_Combo);
+	draw_text(50, 10, roman_Combo);
 	
-	draw_healthbar(5, 80, 100, 85, combo_timer, c_black, c_red, c_red, 0, false, false);
-	if cheer_sound == 0 and combo > 0
-	{
-		audio_play_sound(wav_crowd_cheer, 1, true)
-		cheer_sound = 1
-	}
-	if cheer_sound == 1 and combo > 4
-	{
-		audio_sound_pitch(wav_crowd_cheer, 1.05)
-		cheer_sound = 2
-	}
-	if cheer_sound == 2 and combo > 9
-	{
-		audio_sound_pitch(wav_crowd_cheer, 1.1)
-		cheer_sound = 3
-	}
-	if cheer_sound == 3 and combo > 14
-	{
-		audio_sound_pitch(wav_crowd_cheer, 1.2)
-		cheer_sound = 4
-	}
-	if cheer_sound != 0 and combo == 0
-	{
-		audio_stop_sound(wav_crowd_cheer)
-	}
+	draw_healthbar(30, 80, 130, 85, combo_timer, c_black, c_red, c_red, 0, false, false);
 }
 
 
-
+if (room == rm_game || room = rm_arena){
+	draw_set_font(fnt_title);
+	draw_set_colour(c_purple);
+	draw_set_halign(fa_center);
+	draw_text(600, 30, title);
+}
 
 
 
