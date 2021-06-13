@@ -78,6 +78,9 @@ switch(room){
 			@"As long as your Chain of Binding connects you to the Pillar,
 			you won't die.
 			
+			If your Chain fails, you'll die, within a matter of seconds,
+			so you'll have to reconnect to the Pillar.
+			
 			Maybe you'll actually stand a chance...",
 			1, 1, 0, c_white, c_white, c_white, c_white, 1)
 		}
@@ -128,10 +131,45 @@ switch(room){
 		else if line == 12
 		{
 			draw_text_transformed_colour(room_width/2, room_height/3,
-			@"Build combos, earn titles, achieve glory for the Empire!!!",
+			@"Build Combos",
+			1, 1, 0, c_white, c_white, c_white, c_white, 1)
+		}
+		else if line == 13
+		{
+			draw_text_transformed_colour(room_width/2, room_height/3,
+			@"Build Combos
+			
+			Earn Titles",
+			1, 1, 0, c_white, c_white, c_white, c_white, 1)
+		}
+		else if line == 14
+		{
+			draw_text_transformed_colour(room_width/2, room_height/3,
+			@"Build Combos
+			
+			Earn Titles
+			
+			Achieve Glory for the Empire!!!",
 			1, 1, 0, c_white, c_white, c_white, c_white, 1)
 		}
 		draw_set_halign(fa_left)
+		
+		if line >= 8 and line < 12
+		{
+			draw_sprite(spr_controls, 3, (room_width/2) - 400, room_height/3)
+			draw_sprite(spr_controls, 2, (room_width/2) - 438, room_height/3)
+			draw_sprite(spr_controls, 1, (room_width/2) - 476, room_height/3)
+			draw_sprite(spr_controls, 0, (room_width/2) - 438, (room_height/3) - 38)
+			
+			if line >= 9
+			{
+				draw_sprite(spr_controls, 4, (room_width/2) + 400, room_height/3 + 100)
+			}
+			if line >= 10
+			{
+				draw_sprite(spr_controls, 5, (room_width/2) + 450, room_height/3 + 100)
+			}
+		}
 		break;
 }
 

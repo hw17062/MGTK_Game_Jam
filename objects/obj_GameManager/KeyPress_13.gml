@@ -25,6 +25,7 @@ switch(room){
 		if line == 12 and no_replay == 0
 		{
 			alarm_set(2, 150)
+			alarm_set(5, 50)
 			audio_play_sound(wav_enter_the_arena, 10, false)
 			no_replay = 1
 		}
