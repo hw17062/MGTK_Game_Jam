@@ -12,4 +12,13 @@ switch(room){
 		room_goto(rm_main_menu)
 
 		break;
+		
+	case rm_intro:
+		
+		if next == 0
+		{room_goto_next()}
+		else
+		{line += 1}
+	
+		break;
 }

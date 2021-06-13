@@ -23,7 +23,8 @@ if bumpermax > bumpercurrent{
 	audio_sound_pitch(wav_beam_short, random_range(0.6,2))
 	bumpercurrent++;
 	alarm_set(0, irandom_range(1,2) * 60)
-}else {
+}
+else {
 	
 	alarm_set(0, irandom_range(3,5) * 60)
 }

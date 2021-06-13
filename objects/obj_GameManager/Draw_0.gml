@@ -9,6 +9,71 @@ switch(room){
 	case rm_main_menu:
 
 		break;
+	
+	case rm_intro:
+		
+		draw_set_halign(fa_center)
+		if line == 1
+		{
+			draw_text_transformed_colour(room_width/2, room_height/3,
+			@"So, there's good news and bad news . . .",
+			1, 1, 0, c_white, c_white, c_white, c_white, 1)
+
+		}
+		else if line == 2
+		{
+			draw_text_transformed_colour(room_width/2, room_height/3,
+			@"The bad news is:
+			
+			you've been selected for the Multi-Generational Bloodsport,
+			commonly referred to as the
+			
+			Death Arena of Eternal Doom.",
+			1, 1, 0, c_white, c_white, c_white, c_white, 1)
+		}
+		else if line == 3
+		{
+			draw_text_transformed_colour(room_width/2, room_height/3,
+			@"The bad news is:
+			
+			you've been selected for the Multi-Generational Bloodsport,
+			commonly referred to as the
+			
+			Death Arena of Eternal Doom.
+			
+			Our Emperor really wanted the acronym to spell 'DEAD', and by jove, he tried.",
+			1, 1, 0, c_white, c_white, c_white, c_white, 1)
+		}
+		else if line == 4
+		{
+			draw_text_transformed_colour(room_width/2, room_height/3,
+			@"The good news is:
+			
+			you have a secret weapon. 
+			
+			Your family possesses the Pillar of Eternity,
+			an heirloom, passed down for generations.",
+			1, 1, 0, c_white, c_white, c_white, c_white, 1)
+		}
+		else if line == 5
+		{
+			draw_text_transformed_colour(room_width/2, room_height/3,
+			@"As long as your Chain of Binding connects you to the Pillar,
+			you won't die.",
+			1, 1, 0, c_white, c_white, c_white, c_white, 1)
+		}
+		else if line == 6
+		{
+			draw_text_transformed_colour(room_width/2, room_height/3,
+			@"As long as your Chain of Binding connects you to the Pillar,
+			you won't die.
+			
+			Maybe you’ll actually stand a chance...",
+			1, 1, 0, c_white, c_white, c_white, c_white, 1)
+			next = 0
+		}
+		draw_set_halign(fa_left)
+		break;
 }
 
 if paused
