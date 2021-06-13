@@ -16,3 +16,4 @@ else
 
 instance_create_layer(x,y,"Instances_1", obj_splatter)
 obj_GameManager.comboCounter();
+obj_GameManager.tit_enemies_killed++;

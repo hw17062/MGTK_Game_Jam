@@ -58,8 +58,6 @@ if tit_enemies_killed >= 10{
 	
 	tit_enemies_killed = 0 
 
-	tit_combo = 0
-	tit_disconnections = 0
 
 	tit_throws = 0 
 	tit_init_hits = 0 
@@ -67,4 +65,11 @@ if tit_enemies_killed >= 10{
 
 	tit_timer_clear = 0
 	tit_timer_holding = 0;
+	
+	score_Large_Combo			= 0
+	score_High_Accuracy			= 0
+	score_Time_With_Pillar		= 0
+	score_Bounce				= 0
+	score_Clear					= 0
+	score_Disconnected			= 0
 }

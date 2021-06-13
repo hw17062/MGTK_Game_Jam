@@ -10,7 +10,7 @@ if goblinmax > goblincurrent{
 	var pos_ok = false;
 	while !pos_ok {
 		i = irandom(room_width / 4);
-		j = irandom(room_width / 4);
+		j = irandom(room_height / 4);
 		if map[# i, j] == 0{
 			pos_ok = true;
 		}

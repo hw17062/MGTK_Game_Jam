@@ -81,7 +81,7 @@ function rollTitles(){
 // Vars to hold title
 legacy_title = "pleb"
 gain_legacy = false
-title = ""
+title = "Pleb"
 
 title_Large_Combo		= lst_Large_Combo_Titles[| irandom(2)]
 title_High_Accuracy		= lst_High_Accuracy_Titles[| irandom(2)]
@@ -98,7 +98,6 @@ mod_Time_With_Pillar	= -1
 mod_Bounce				= -1
 mod_Clears				= -1
 mod_Disconnected		= -1
-mod_Modifiers			= -1
 
 
 // Vars to gather scores to determine which title to get
@@ -124,44 +123,45 @@ tit_timer_holding = 0;
 
 
 function updateTitle(){
+	title = ""
 	if mod_Large_Combo >= 0 && mod_Large_Combo < 5{
-		title += lst_Modifiers + " "+ title_Large_Combo;
+		title += lst_Modifiers[|mod_Large_Combo]  + " "+ title_Large_Combo;
 	} else if mod_Large_Combo == 5 && !gain_legacy{ 
 		gain_legacy = true;
 		gain_legacy = "Champion"
 	}
 	
 	if mod_High_Accuracy >= 0 && mod_High_Accuracy < 5{
-		title += lst_Modifiers + " "+ title_High_Accuracy;
+		title += lst_Modifiers[|mod_High_Accuracy] + " "+ title_High_Accuracy;
 	} else if mod_High_Accuracy == 5 && !gain_legacy{ 
 		gain_legacy = true;
 		gain_legacy = "Hunter"
 	}
 	
 	if mod_Time_With_Pillar >= 0 && mod_Time_With_Pillar < 5{
-		title += lst_Modifiers + " "+ title_Time_With_Pillar;
+		title += lst_Modifiers[|mod_Time_With_Pillar] + " "+ title_Time_With_Pillar;
 	} else if mod_Time_With_Pillar == 5 && !gain_legacy{ 
 		gain_legacy = true;
 		gain_legacy = "Tank"
 	}
 	
 	if mod_Bounce >= 0 && mod_Bounce < 5{
-		title += lst_Modifiers + " "+ title_Bounce;
+		title += lst_Modifiers[|mod_Bounce] + " "+ title_Bounce;
 	} else if mod_Bounce == 5 && !gain_legacy{ 
 		gain_legacy = true;
 		gain_legacy = "Mastermind"
 	}
 	
 	if mod_Clears >= 0 && mod_Clears < 5{
-		title += lst_Modifiers + " "+ title_Clear_Time;
+		title += lst_Modifiers[|mod_Clears] + " "+ title_Clear_Time;
 	} else if mod_Clears == 5 && !gain_legacy{ 
 		gain_legacy = true;
 		gain_legacy = "Gladiator"
 	}
 	
-	if mod_Modifiers >= 0 && mod_Modifiers < 5{
-		title += lst_Modifiers + " "+ title_Disconnected;
-	} else if mod_Modifiers == 5 && !gain_legacy{ 
+	if mod_Disconnected >= 0 && mod_Disconnected < 5{
+		title += lst_Modifiers[|mod_Clears] + " "+ title_Disconnected;
+	} else if mod_Disconnected == 5 && !gain_legacy{ 
 		gain_legacy = true;
 		gain_legacy = "Daredevil"
 	}

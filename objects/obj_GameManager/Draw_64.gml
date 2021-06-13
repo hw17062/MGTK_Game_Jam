@@ -19,11 +19,12 @@ if combo_timer > 0{
 }
 
 
-
-	draw_set_font(fnt_ComboFont);
+if (room == rm_game || room = rm_arena){
+	draw_set_font(fnt_title);
 	draw_set_colour(c_purple);
 	draw_set_halign(fa_center);
-	draw_text(room_width/2, 30, title);
+	draw_text(600, 30, title);
+}
 
 
 
