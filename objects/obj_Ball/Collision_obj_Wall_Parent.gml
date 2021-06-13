@@ -3,6 +3,8 @@
 
 if other.bouncy{
 	move_bounce_all(true);
+	bouncing = true
+	init_throw = false
 } else {
 	speed = 0
 }
