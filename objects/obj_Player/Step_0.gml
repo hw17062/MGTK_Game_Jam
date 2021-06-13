@@ -29,7 +29,7 @@ if (moveX != 0){
 if (moveY != 0){
 	if (place_meeting(x,y+moveY + (5 * sign(moveY)), other)){
 		repeat(abs(moveY)){
-			if(!place_meeting(x, y+sign(moveY) + (5 * sign(moveY)), other)){y += sign(moveY);}
+			if(!place_meeting(x, y+sign(moveY) + (5 * sign(moveYM)), other)){y += sign(moveY);}
 			else {break;}
 		}
 		moveY = 0
