@@ -5,4 +5,3 @@
 event_inherited();
 
 mp_potential_settings(10, 45, 3, true)
-

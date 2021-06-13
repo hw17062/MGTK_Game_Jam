@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_Enemy",
-    "path": "sprites/spr_Enemy/spr_Enemy.yy",
+    "name": "spr_bumper_idle",
+    "path": "sprites/spr_bumper_idle/spr_bumper_idle.yy",
   },
   "solid": false,
   "visible": true,

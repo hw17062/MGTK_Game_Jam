@@ -4,3 +4,21 @@ mp_grid_path(global.grid, path, x, y, obj_Player.x, obj_Player.y, true);
 
 
 path_start(path, 3, path_action_stop, true);
+
+if speed == 0
+{
+	sprite_index = spr_bumper_idle
+	if direction < 90 and direction > -90
+	{
+		image_xscale = 1
+	}
+	else
+	{
+		image_xscale = -1
+	}
+}
+else if attacking == 0 
+	if direction < 45 and direction > -45
+	{
+	
+	}
