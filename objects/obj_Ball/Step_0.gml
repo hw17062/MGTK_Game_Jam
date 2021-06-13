@@ -35,6 +35,7 @@ dist = point_distance(x, y, player_pos_x, player_pos_y);
 
 //check is the distance between the payer and the weapon is beyond it's max
 if dist > max_dist && !global.broken{
+	obj_GameManager.score_Disconnected++;
 	global.broken = true;
 	with (obj_GameManager){
 		paused = true

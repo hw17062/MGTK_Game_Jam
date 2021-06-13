@@ -13,13 +13,18 @@ if combo_timer > 0{
 	
 	draw_set_font(fnt_ComboFont);
 	draw_set_colour(c_red);
-	draw_text(10, 10, roman_Combo);
+	draw_text(50, 10, roman_Combo);
 	
-	draw_healthbar(5, 80, 100, 85, combo_timer, c_black, c_red, c_red, 0, false, false);
+	draw_healthbar(30, 80, 130, 85, combo_timer, c_black, c_red, c_red, 0, false, false);
 }
 
 
-
+if (room == rm_game || room = rm_arena){
+	draw_set_font(fnt_title);
+	draw_set_colour(c_purple);
+	draw_set_halign(fa_center);
+	draw_text(600, 30, title);
+}
 
 
 
