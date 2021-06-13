@@ -178,13 +178,13 @@ switch(room){
 
 if paused
 {
-	var vratio = 480/room_width
+	var vratio = 480/1366
 	
 	var _cx = camera_get_view_x(view_camera[0])
 	var _cy = camera_get_view_y(view_camera[0])
 	
 	
-	draw_sprite_ext(paused_sprite, -1, _cx, _cy, vratio,vratio, 0, c_white, 1);
+	draw_sprite_ext(paused_sprite, -1, _cx, _cy, vratio, vratio, 0, c_white, 1);
 	draw_set_alpha(0.5);
     draw_rectangle_colour(0, 0, room_width, room_height, c_black, c_black, c_black, c_black, false);
     draw_set_alpha(1);

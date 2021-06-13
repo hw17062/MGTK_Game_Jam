@@ -2,8 +2,9 @@
 // You can write your code in this editor
 
 if global.broken{
+	//draw_sprite(spr_timer,irandom(3),room_width - 30, room_height /3)
 	time_left = (alarm_get(0) / (60 * 5)) * 100
-	draw_healthbar(room_width - 30, room_height /3, room_width - 20, room_height *2 / 3, time_left, c_black,c_red, c_yellow, 3, true, true);
+	draw_healthbar(room_width - 33, room_height /3, room_width - 20, (2*room_height/3), time_left, c_black,c_red, c_yellow, 3, true, true);
 }
 
 combo_timer = (alarm_get(1) / 90) * 100
