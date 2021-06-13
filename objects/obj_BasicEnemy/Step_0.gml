@@ -42,3 +42,4 @@ else if attacking == 0
 		sprite_index = spr_bumper_walk_right
 		image_xscale = -1
 	}
+}
