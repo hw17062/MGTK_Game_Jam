@@ -23,3 +23,6 @@ alarm_set(4, timer)
 sound = 0
 
 attacking = 0
+
+tracking = false
+alarm_set(0, 90);

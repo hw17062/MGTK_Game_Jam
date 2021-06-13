@@ -30,8 +30,8 @@
     {"propertyId":{"name":"bouncy","path":"objects/obj_Wall_Parent/obj_Wall_Parent.yy",},"objectId":{"name":"obj_Wall_Parent","path":"objects/obj_Wall_Parent/obj_Wall_Parent.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Walls",
+    "path": "folders/Objects/Walls.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_Wall_Bounce",

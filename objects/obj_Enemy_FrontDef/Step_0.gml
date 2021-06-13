@@ -23,4 +23,6 @@ if (point_distance(x,y, obj_Player.x, obj_Player.y) < 200) && !proj_on_cooldown{
 	alarm_set(1, 60*3)
 	proj_on_cooldown = true
 	instance_create_layer(x, y, "Instances", obj_shield_Projectile);
+	tracking = false
+	alarm_set(0, 30);
 }
