@@ -46,12 +46,16 @@ if mouse_check_button_pressed(mb_left) and !instance_exists(obj_Ball)
 	spawn_x = x + lengthdir_x(50,spawn_dir)
 	spawn_y = y + lengthdir_y(50,spawn_dir)
    instance_create_layer(spawn_x, spawn_y, "Instances", obj_Ball);
+   holding = false
    audio_play_sound(wav_throw, 3, false)
    if instance_exists(obj_pick_up_anim){
 	   instance_destroy(obj_pick_up_anim)
    }
    }
 
+
+if holding == false
+{
 if moveX > 0
 {
 	sprite_index = spr_player_right
@@ -96,7 +100,55 @@ else
 		}
 	}
 }
-
+}
+else
+{
+if moveX > 0
+{
+	sprite_index = spr_player_pillar_right
+	image_xscale = 1
+	last_vx = moveX
+}
+else
+{
+	if moveX < 0
+	{
+		sprite_index = spr_player_pillar_right
+		image_xscale = -1
+		last_vx = moveX
+	}
+	else
+	{
+		if moveY > 0
+		{
+			sprite_index = spr_player_pillar_down
+			image_xscale = 1
+		}
+		else
+		{
+			if moveY < 0
+			{
+			sprite_index = spr_player_pillar_up
+			image_xscale = 1
+			}
+			else
+			{
+				if last_vx >= 0
+				{
+					sprite_index = spr_player_pillar_idle
+					image_xscale = 1
+				}
+				else
+				{
+					sprite_index = spr_player_pillar_idle
+					image_xscale = -1
+				}
+			}
+		}
+	}
+}
+	
+}
 
 //If overlapping with wall, stop moving
 if (collision_circle(x, y, 15, obj_Wall_Parent, true, true) != noone){

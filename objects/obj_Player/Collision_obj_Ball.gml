@@ -8,3 +8,4 @@ if global.broken == true
 	audio_resume_sound(wav_gameplay_loop)
 }
 global.broken = false;
+holding = true

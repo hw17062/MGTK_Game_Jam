@@ -11,3 +11,5 @@ vy = 0
 last_vx = 0
 
 walkSpeed = 5
+
+holding = true
