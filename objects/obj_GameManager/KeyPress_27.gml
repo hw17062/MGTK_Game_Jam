@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if room == rm_arena or room == rm_game
+{
 //if currently paused, unpause
 if paused {
 	paused = false
@@ -26,4 +28,5 @@ else if !paused
 	obj_Player.s = 0
 	obj_Player.d = 0
 	instance_deactivate_all(true);
+}
 }

@@ -12,3 +12,4 @@ var _ypos = (_dheight / 2) - 270;
 window_set_rectangle(10, 10, _dwidth, _dheight);
 */
 global.broken = false;
+chain_break = 0  //variable indicating momentat which chain is broken, not the state of the chain

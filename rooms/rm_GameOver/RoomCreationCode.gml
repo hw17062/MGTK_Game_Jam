@@ -1,0 +1,1 @@
+audio_play_sound(wav_you_dead, 10, false)

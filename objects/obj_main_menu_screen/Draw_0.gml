@@ -34,3 +34,4 @@ gpu_set_blendmode(bm_normal)
 surface_reset_target()
 
 draw_surface(surfacewithmask,x,y)
+draw_set_alpha(1)
