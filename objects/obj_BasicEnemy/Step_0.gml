@@ -1,10 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+if tracking {
 mp_grid_path(global.grid, path, x, y, obj_Player.x, obj_Player.y, true);
-
-
 path_start(path, 3, path_action_stop, true);
-
+}else
+{
+	path_end()
+}
 if speed == 0
 {
 	sprite_index = spr_bumper_idle
@@ -39,4 +42,3 @@ else if attacking == 0
 		sprite_index = spr_bumper_walk_right
 		image_xscale = -1
 	}
-}

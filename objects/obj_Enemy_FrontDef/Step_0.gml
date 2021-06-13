@@ -2,18 +2,14 @@
 // You can write your code in this editor
 
 //create a path towards the player
-if (collision_circle(x, y, 10, obj_Player, true, true) == noone && !bump_back){
+if tracking {
 	mp_grid_path(global.grid, path, x, y, obj_Player.x, obj_Player.y, true);
 
 	path_start(path,1.5, path_action_stop, false);
-} else if !bump_back{
+}else {
 	path_end()
-	bumpdir = point_direction(x,y, obj_Player.x, obj_Player.y);
-	alarm_set(0,20);
-	bump_back = true;
-	motion_add(-bumpdir, 2);
-	
 }
+
 
 //changing facing direction to match where they are moving
 //Facing is only in 8 directions, so if the object turns more than 60 deg, then the angle they are looking at will change
