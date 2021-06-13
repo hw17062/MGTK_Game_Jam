@@ -8,6 +8,7 @@
     {"id":{"name":"spr_floor_tile","path":"sprites/spr_floor_tile/spr_floor_tile.yy",},"order":16,},
     {"id":{"name":"wav_throw","path":"sounds/wav_throw/wav_throw.yy",},"order":6,},
     {"id":{"name":"obj_Enemy_Parent","path":"objects/obj_Enemy_Parent/obj_Enemy_Parent.yy",},"order":3,},
+    {"id":{"name":"fnt_ComboFont","path":"fonts/fnt_ComboFont/fnt_ComboFont.yy",},"order":0,},
     {"id":{"name":"obj_enter_start","path":"objects/obj_enter_start/obj_enter_start.yy",},"order":3,},
     {"id":{"name":"spr_player_down","path":"sprites/spr_player_down/spr_player_down.yy",},"order":3,},
     {"id":{"name":"spr_Wall_Bouncy","path":"sprites/spr_Wall_Bouncy/spr_Wall_Bouncy.yy",},"order":0,},
