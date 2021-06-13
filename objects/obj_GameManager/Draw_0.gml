@@ -68,7 +68,7 @@ switch(room){
 			@"As long as your Chain of Binding connects you to the Pillar,
 			you won't die.
 			
-			If yourr Chain fails, you'll die, within a matter of seconds,
+			If your Chain fails, you'll die, within a matter of seconds,
 			so you'll have to reconnect to the Pillar.",
 			1, 1, 0, c_white, c_white, c_white, c_white, 1)
 		}
