@@ -10,8 +10,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "wav_danger",
-  "duration": 0.0,
+  "soundFile": "wav_danger.wav",
+  "duration": 27.43357,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
