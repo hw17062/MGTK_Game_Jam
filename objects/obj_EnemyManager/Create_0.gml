@@ -11,3 +11,8 @@ goblinmax = 3;
 goblincurrent = 0;
 
 alarm_set(1, irandom_range(60,120));
+
+huntermax = 5;
+huntercurrent = 0;
+
+alarm_set(2, irandom_range(60,120));
