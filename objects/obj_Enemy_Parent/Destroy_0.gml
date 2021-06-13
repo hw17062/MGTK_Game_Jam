@@ -14,4 +14,5 @@ else
 	audio_play_sound(wav_death3, 3, false)
 }
 
+instance_create_layer(x,y,"Instances_1", obj_splatter)
 obj_GameManager.comboCounter();
