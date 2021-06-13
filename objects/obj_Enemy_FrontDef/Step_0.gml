@@ -16,8 +16,11 @@ if (collision_circle(x, y, 10, obj_Player, true, true) == noone && !bump_back){
 }
 
 //changing facing direction to match where they are moving
-facing = round(direction / 45) * 45;
-image_angle = facing;
+//Facing is only in 8 directions, so if the object turns more than 60 deg, then the angle they are looking at will change
+if (direction > (facing *45) +50) or (direction < (facing *45) -50){
+	facing = direction div 45;
+}
+image_angle = facing * 45;
 
 // Projectile attack if in range
 if (point_distance(x,y, obj_Player.x, obj_Player.y) < 200) && !proj_on_cooldown{

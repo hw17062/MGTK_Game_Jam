@@ -3,6 +3,6 @@
 
 col_dir = point_direction(x, y, other.x, other.y)
 
-if col_dir > facing + 45 || col_dir < facing - 45 {
+if col_dir > facing*45 + 45 || col_dir < facing*45 - 45 {
  instance_destroy(self);
 }
