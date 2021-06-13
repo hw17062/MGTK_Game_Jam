@@ -139,6 +139,7 @@ switch(room){
 			draw_text_transformed_colour(room_width/2, room_height/3,
 			@"Build Combos
 			
+			
 			Earn Titles",
 			1, 1, 0, c_white, c_white, c_white, c_white, 1)
 		}
@@ -147,7 +148,9 @@ switch(room){
 			draw_text_transformed_colour(room_width/2, room_height/3,
 			@"Build Combos
 			
+			
 			Earn Titles
+			
 			
 			Achieve Glory for the Empire!!!",
 			1, 1, 0, c_white, c_white, c_white, c_white, 1)

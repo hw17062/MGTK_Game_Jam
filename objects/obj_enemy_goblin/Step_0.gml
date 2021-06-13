@@ -71,3 +71,39 @@ if tracking{
 }else{
 	path_end()
 }
+
+if speed == 0
+{
+	sprite_index = spr_goblin_idle
+	if direction < 90 and direction > -90
+	{
+		image_xscale = -1
+	}
+	else
+	{
+		image_xscale = 1
+	}
+}
+else if attacking == 0
+{
+	if direction < 45 and direction > -45
+	{
+		sprite_index = spr_goblin_left
+		image_xscale = -1
+	}
+	else if direction < 135 and direction > 45
+	{
+		sprite_index = spr_goblin_up
+		image_xscale = 1
+	}
+	else if direction < -45 and direction > -135
+	{
+		sprite_index = spr_goblin_down
+		image_xscale = 1
+	}
+	else
+	{
+		sprite_index = spr_goblin_left
+		image_xscale = 1
+	}
+}

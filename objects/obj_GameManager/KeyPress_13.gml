@@ -22,6 +22,11 @@ switch(room){
 		else if line < 12
 		{line += 1}
 		
+		if line == 3
+		{
+			instance_create_layer(room_width/2, 50 + 2*room_height/3, "Instances", obj_emperor)
+		}
+		
 		if line == 12 and no_replay == 0
 		{
 			alarm_set(2, 150)
