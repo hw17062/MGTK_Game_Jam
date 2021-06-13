@@ -1,82 +1,43 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if right == 1 or d == 1
-{
-	move_right = 1
-}
-else
-{
-	move_right = 0
-}
+left	=  keyboard_check(vk_left)	|| keyboard_check(ord("A")) ? true : false
+right	=  keyboard_check(vk_right)	|| keyboard_check(ord("D")) ? true : false
+up		=  keyboard_check(vk_up)	|| keyboard_check(ord("W")) ? true : false
+down	=  keyboard_check(vk_down)	|| keyboard_check(ord("S")) ? true : false
 
-if left == 1 or a == 1
-{
-	move_left = 1
-}
-else
-{
-	move_left = 0
+moveX = (right - left)	* walkSpeed;
+moveY = (down - up)		* walkSpeed;
+
+if bumpspd > 0{
+	moveX += lengthdir_x(bumpspd, bumpdir);
+	moveY += lengthdir_y(bumpspd, bumpdir);
+	
+	bumpspd = bumpspd - 0.1
 }
 
-if up == 1 or w == 1
-{
-	move_up = 1
-}
-else
-{
-	move_up = 0
-}
-
-if down == 1 or s == 1
-{
-	move_down = 1
-}
-else
-{
-	move_down = 0
+if (moveX != 0){
+	if (place_meeting(x+moveX + (5 * sign(moveX)),y, other)){
+		repeat(abs(moveX)){
+			if(!place_meeting(x+sign(moveX) + (5 * sign(moveX)), y, other)){x += sign(moveX);}
+			else {break;}
+		}
+		moveX = 0
+	}
 }
 
-vx = (move_right - move_left) * walkSpeed
-vy = (move_down - move_up) * walkSpeed
-
-if vx != 0 and vy != 0
-{
-	vx = vx/sqrt(2)
-	vy = vy/sqrt(2)
+if (moveY != 0){
+	if (place_meeting(x,y+moveY + (5 * sign(moveY)), other)){
+		repeat(abs(moveY)){
+			if(!place_meeting(x, y+sign(moveY) + (5 * sign(moveY)), other)){y += sign(moveY);}
+			else {break;}
+		}
+		moveY = 0
+	}
 }
 
-
-//if place_meeting(x+vx,y,all)
-//{
-//	show_debug_message("coll detected")
-//    while !(place_meeting(x+sign(vx),y,all))
-//    {
-//        x += sign(vx);
-//    }
-//    vx = 0;
-//}
-//else
-//{
-//	x += vx;
-//}
-
-//if place_meeting(x,y+vy,all)
-//{
-//    while !(place_meeting(x,y+sign(vy),all))
-//    {
-//        y += sign(vy);
-//    }
-//    vy = 0;
-//}
-//else
-//{
-//	y +=vy;
-//}
-
-
-x += vx
-y += vy
+x += moveX
+y += moveY
 
 if mouse_check_button_pressed(mb_left) and !instance_exists(obj_Ball)
    {
@@ -91,30 +52,30 @@ if mouse_check_button_pressed(mb_left) and !instance_exists(obj_Ball)
    }
    }
 
-if vx > 0
+if moveX > 0
 {
 	sprite_index = spr_player_right
 	image_xscale = 1
-	last_vx = vx
+	last_vx = moveX
 }
 else
 {
-	if vx < 0
+	if moveX < 0
 	{
 		sprite_index = spr_player_right
 		image_xscale = -1
-		last_vx = vx
+		last_vx = moveX
 	}
 	else
 	{
-		if vy > 0
+		if moveY > 0
 		{
 			sprite_index = spr_player_down
 			image_xscale = 1
 		}
 		else
 		{
-			if vy < 0
+			if moveY < 0
 			{
 			sprite_index = spr_player_up
 			image_xscale = 1
