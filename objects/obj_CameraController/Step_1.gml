@@ -7,11 +7,11 @@ if follow != noone {
 	camera_set_view_mat(view_camera[0], vm);
 	if follow.x > room_width - 240
 	{
-		cam_x = room_width - 240
+		cam_x = room_width - 480
 	}
 	else if follow.x < 240
 	{
-		cam_x = 240
+		cam_x = 0
 	}
 	else
 	{
@@ -20,11 +20,11 @@ if follow != noone {
 	
 	if follow.y > room_height - 135
 	{
-		cam_y = room_height - 135
+		cam_y = room_height - 270
 	}
 	else if follow.y < 135
 	{
-		cam_y = 135
+		cam_y = 0
 	}
 	else
 	{
