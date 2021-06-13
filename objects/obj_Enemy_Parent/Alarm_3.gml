@@ -1,3 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-image_angle = 120 //random_range(180,360)
+image_alpha += 0.2
+alarm_set(3, 1)

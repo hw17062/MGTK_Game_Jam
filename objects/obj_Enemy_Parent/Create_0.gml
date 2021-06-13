@@ -1,6 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-randomise()
 path = path_add()
 scream = irandom(2)
 if scream == 0
@@ -25,4 +24,6 @@ sound = 0
 attacking = 0
 
 tracking = false
+image_alpha = 0
+alarm_set(3, 1)
 alarm_set(0, 90);
