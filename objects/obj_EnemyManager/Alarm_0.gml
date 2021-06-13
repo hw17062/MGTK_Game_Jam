@@ -19,7 +19,6 @@ if bumpermax > bumpercurrent{
 	instance_create_layer(i*4, j*4, "Instances", obj_BasicEnemy);
 	instance_create_layer(i*4, j*4 + 20, "Instances_1", obj_spawn_beam);
 	audio_play_sound(wav_beam_short, 1, false)
-	randomise()
 	audio_sound_pitch(wav_beam_short, random_range(0.6,2))
 	bumpercurrent++;
 	alarm_set(0, irandom_range(1,2) * 60)

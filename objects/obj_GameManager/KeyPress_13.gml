@@ -16,9 +16,18 @@ switch(room){
 	case rm_intro:
 		
 		if next == 0
-		{room_goto_next()}
-		else
+		{
+			room_goto_next()
+		}
+		else if line < 12
 		{line += 1}
+		
+		if line == 12 and no_replay == 0
+		{
+			alarm_set(2, 150)
+			audio_play_sound(wav_enter_the_arena, 10, false)
+			no_replay = 1
+		}
 	
 		break;
 }

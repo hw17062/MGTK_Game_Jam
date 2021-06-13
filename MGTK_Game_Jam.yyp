@@ -71,6 +71,7 @@
     {"id":{"name":"rm_arena","path":"rooms/rm_arena/rm_arena.yy",},"order":6,},
     {"id":{"name":"obj_chain_break","path":"objects/obj_chain_break/obj_chain_break.yy",},"order":3,},
     {"id":{"name":"spr_bumper_idle","path":"sprites/spr_bumper_idle/spr_bumper_idle.yy",},"order":0,},
+    {"id":{"name":"wav_enter_the_arena","path":"sounds/wav_enter_the_arena/wav_enter_the_arena.yy",},"order":18,},
     {"id":{"name":"obj_AimAssist","path":"objects/obj_AimAssist/obj_AimAssist.yy",},"order":4,},
     {"id":{"name":"spr_spawn_beam","path":"sprites/spr_spawn_beam/spr_spawn_beam.yy",},"order":17,},
     {"id":{"name":"obj_main_menu_screen","path":"objects/obj_main_menu_screen/obj_main_menu_screen.yy",},"order":0,},

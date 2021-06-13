@@ -68,9 +68,68 @@ switch(room){
 			@"As long as your Chain of Binding connects you to the Pillar,
 			you won't die.
 			
-			Maybe you’ll actually stand a chance...",
+			If yourr Chain fails, you'll die, within a matter of seconds,
+			so you'll have to reconnect to the Pillar.",
 			1, 1, 0, c_white, c_white, c_white, c_white, 1)
-			next = 0
+		}
+		else if line == 7
+		{
+			draw_text_transformed_colour(room_width/2, room_height/3,
+			@"As long as your Chain of Binding connects you to the Pillar,
+			you won't die.
+			
+			Maybe you'll actually stand a chance...",
+			1, 1, 0, c_white, c_white, c_white, c_white, 1)
+		}
+		else if line == 8
+		{
+			draw_text_transformed_colour(room_width/2, room_height/3,
+			@"Move using the WASD or the Arrow keys
+			
+			or both, if you're feeling wild.",
+			1, 1, 0, c_white, c_white, c_white, c_white, 1)
+		}
+		else if line == 9
+		{
+			draw_text_transformed_colour(room_width/2, room_height/3,
+			@"Move using the WASD or the Arrow keys
+			
+			or both, if you're feeling wild.
+			
+			The left mouse button will hurl the Pillar towards your cursor.",
+			1, 1, 0, c_white, c_white, c_white, c_white, 1)
+		}
+		else if line == 10
+		{
+			draw_text_transformed_colour(room_width/2, room_height/3,
+			@"Move using the WASD or the Arrow keys
+			
+			or both, if you're feeling wild.
+			
+			The left mouse button will hurl the Pillar towards your cursor.
+			
+			The right mouse button will recall the Pillar to your current position.",
+			1, 1, 0, c_white, c_white, c_white, c_white, 1)
+		}
+		else if line == 11
+		{
+			draw_text_transformed_colour(room_width/2, room_height/3,
+			@"Move using the WASD or the Arrow keys
+			
+			or both, if you're feeling wild.
+			
+			The left mouse button will hurl the Pillar towards your cursor.
+			
+			The right mouse button will recall the Pillar to your current position.
+			
+			Beware, the recall has a cooldown time!",
+			1, 1, 0, c_white, c_white, c_white, c_white, 1)
+		}
+		else if line == 12
+		{
+			draw_text_transformed_colour(room_width/2, room_height/3,
+			@"Build combos, earn titles, achieve glory for the Empire!!!",
+			1, 1, 0, c_white, c_white, c_white, c_white, 1)
 		}
 		draw_set_halign(fa_left)
 		break;

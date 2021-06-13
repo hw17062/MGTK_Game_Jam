@@ -18,6 +18,7 @@ combo = 0;
 
 line = 1
 next = 1
+no_replay = 0
 
 function comboCounter(){
 	combo++;
