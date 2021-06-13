@@ -5,7 +5,7 @@
 if tracking {
 	mp_grid_path(global.grid, path, x, y, obj_Player.x, obj_Player.y, true);
 
-	path_start(path,1.5, path_action_stop, false);
+	path_start(path,0.8, path_action_stop, false);
 }else {
 	path_end()
 }

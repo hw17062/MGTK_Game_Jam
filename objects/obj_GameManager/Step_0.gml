@@ -15,7 +15,7 @@ if tit_enemies_killed >= 10{
 	score_Bounce = tit_bounce_hits - 3
 	
 	score_Clear = 10 - (tit_timer_clear / room_speed) 
-	score_Time_With_Pillar = (tit_timer_holding / room_speed) = 6
+	score_Time_With_Pillar = (tit_timer_holding / room_speed) - 100
 	
 	all_scores = ds_list_create()
 	

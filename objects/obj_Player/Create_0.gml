@@ -10,6 +10,6 @@ vy = 0
 
 last_vx = 0
 
-walkSpeed = 5
+walkSpeed = 3
 
 holding = true

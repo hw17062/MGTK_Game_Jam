@@ -15,8 +15,10 @@ global.broken = false;
 chain_break = 0  //variable indicating momentat which chain is broken, not the state of the chain
 
 combo = 0;
-
+time = 0
 cheer_sound = 0
+
+alarm_set(4, 540)
 
 line = 1
 next = 1

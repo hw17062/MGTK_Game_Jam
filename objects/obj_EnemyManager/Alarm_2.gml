@@ -16,7 +16,7 @@ if huntermax > huntercurrent{
 		}
 	}
 
-	instance_create_layer(i*4, j*4, "Instances", obj_EnemyFrontDef);
+	instance_create_layer(i*4, j*4, "Instances", obj_Enemy_FrontDef);
 	instance_create_layer(i*4, j*4 + 20, "Instances_1", obj_spawn_beam);
 	audio_play_sound(wav_beam_short, 1, false)
 	audio_sound_pitch(wav_beam_short, random_range(0.6,2))

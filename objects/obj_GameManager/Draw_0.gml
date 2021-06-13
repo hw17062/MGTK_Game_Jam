@@ -190,7 +190,7 @@ if paused
     draw_set_alpha(1);
     if chain_break == 0
 	{
-		draw_text_transformed_colour(_cx + 5, _cy , "PAUSED", 2, 2, 0, c_aqua, c_aqua, c_aqua, c_aqua, 1);
+		//draw_text_transformed_colour(_cx + 5, _cy , "PAUSED", 2, 2, 0, c_aqua, c_aqua, c_aqua, c_aqua, 1);
 	}
 	else if chain_break == 1
 	{

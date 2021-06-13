@@ -7,7 +7,7 @@ sound = 0
 recalling = false
 spawn_dir = point_direction(x,y,mouse_x,mouse_y)
 
-motion_set(spawn_dir, 5);
+motion_set(spawn_dir, 3.2);
 stolen = noone; //holds if the ball is stolen, is it is, then this holds who has it
 
 //init dist to play = 0

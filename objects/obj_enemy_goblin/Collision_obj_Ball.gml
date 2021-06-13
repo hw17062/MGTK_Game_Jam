@@ -6,7 +6,7 @@ if other.speed > 0 && !holding_ball{
 }else {
 	holding_ball = true;
 	other.stolen = self
-	mv_speed = 2;
+	mv_speed = 1;
 	if sound == 0
 	{
 		if x <= other.x
