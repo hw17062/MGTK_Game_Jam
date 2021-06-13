@@ -13,3 +13,5 @@ else
 {
 	audio_play_sound(wav_death3, 3, false)
 }
+
+obj_GameManager.comboCounter();
