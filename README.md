@@ -12,7 +12,8 @@ The project was made over the course of 48 hours, from June 11th 2021 at 7:03 PM
 Hobie Webb
 
 ### Art Assets
-AngeloTheAngelo and RedVoxel
+AngeloTheAngelo
+RedVoxel
 
 ### Music
 Leon Seidel
