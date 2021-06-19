@@ -8,14 +8,14 @@ The project was made over the course of 48 hours, from June 11th 2021 at 7:03 PM
 
 ## Team Members
 
-###Programming
+### Programming
 Hobie Webb
 
-###Art Assets
+### Art Assets
 AngeloTheAngelo and RedVoxel
 
-###Music
+### Music
 Leon Seidel
 
-###Writing - Design - Team Leader
+### Writing - Design - Team Leader
 Henry Barrington
